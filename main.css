@@ -3,7 +3,11 @@ header {
     justify-content: space-between;
     align-items:center;
     padding: 20px;
-}
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 body {
     font-family: 'Raleway', sans-serif;
     color: #213053;
@@ -13,13 +17,13 @@ body {
     height: 30px;
   }
   a {
-    size: 10px;
     text-decoration: none;
     color: #213053;
   }
   header a {
+    font-size: 15px;
     font-weight: 600;
-    margin: 25px;
+    margin-right: 25px;
   }
   button{
     font-family: 'Raleway', sans-serif;
@@ -31,6 +35,7 @@ body {
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
+    transition: background-color 0.3s ease-in;
   }
   .about__sun—image {
     width: 100px;
