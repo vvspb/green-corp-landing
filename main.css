@@ -3,10 +3,19 @@ header {
     justify-content: space-between;
     align-items:center;
     padding: 20px;
-    background-color: white;
-    position: sticky;
+    background-color: transparent;
+    position: fixed;
     top: 0;
     z-index: 1;
+    right: 0;
+    left: 0;
+    transition: background-color 0.25s ease;
+    transition: box-shadow 0.25s ease;
+  }
+  .header__scrolled {
+    background-color: #fff;
+    box-shadow:  0 12px 34px -11px rgb(65 62 101 / 10%);
+    transition: background-color 0.25s ease;
   }
 body {
     font-family: 'Raleway', sans-serif;
@@ -55,7 +64,7 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding-top: 115px;
+      padding-top: 200px;
       padding-bottom: 115px;
       background: url('img/back.png') no-repeat;
       background-position: center;
@@ -75,7 +84,7 @@ body {
     font-size: 18px;
     border-radius: 20px;
     padding: 20px 25px;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
   .about__info {
     max-width: 550px;
@@ -291,7 +300,7 @@ body {
   input {
     outline: none;
   }
-  button:hover {
+button:hover {
     background-color: #f6980c;
     color:white;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
